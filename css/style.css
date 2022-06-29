@@ -1,0 +1,16 @@
+/* VARIAVEIS */
+
+:root {
+
+    --cor-cinza: #E5E5E5;
+    --cor-amarelo: #f09311;
+    --cor-preto: #000;
+}
+
+/* GLOGAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+

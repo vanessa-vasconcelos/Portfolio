@@ -1,0 +1,41 @@
+.menu__imagem {
+    position: absolute;
+    top: 6rem;
+    margin-left: 15rem;
+}
+
+.menu__amarelo {
+    background-color: var(--cor-amarelo);
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+
+.menu__preto {
+    background-color: var(--cor-preto);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.menu__branco {
+    background-color: var(--cor-cinza);
+    width: 70rem;
+    height: 38rem;
+    margin-left: 6rem;
+    top: 3rem;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.menu__geral {
+    display: flex;
+}
+
+.menu__apresentacao {
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    margin-left: 10rem;
+    
+}
