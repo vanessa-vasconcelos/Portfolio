@@ -1,0 +1,5 @@
+.descricao {
+    position: absolute;
+    color: var(--cor-amarelo);
+    top: 45rem;
+}

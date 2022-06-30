@@ -1,10 +1,27 @@
+/* IMPORTAÇÃO DE FONTE */
+
+@font-face {
+    font-family: "Please";
+    src: url(../font/Please\ write\ me\ a\ song.ttf);
+}
+
+@font-face {
+    font-family: "Morning";
+    src: url(../font/MorningBreeze.otf);
+}
+
 /* VARIAVEIS */
 
 :root {
 
+    /* CORES */
     --cor-cinza: #E5E5E5;
     --cor-amarelo: #f09311;
     --cor-preto: #000;
+
+    /* FONTES */
+    --fonte-please: 'Please', sans serif;
+    --fonte-morning: 'Morning', sans serif;
 }
 
 /* GLOGAL */
@@ -12,5 +29,23 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.menu__preto {
+    background-color: var(--cor-preto);
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+.cinza {
+    background-color: var(--cor-cinza);
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
