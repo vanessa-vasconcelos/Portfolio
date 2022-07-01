@@ -1,0 +1,31 @@
+.menu__amarelo-contato {
+    background-color: var(--cor-amarelo);
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.menu__preto-contato{
+    background-color: var(--cor-preto);
+    width: 100%;
+    height: 35vh;
+    position: relative;
+}
+
+.menu__branco-contato {
+    background-color: var(--cor-cinza);
+    width: 30rem;
+    height: 35rem;
+    margin-left: 25rem;
+    top: 302rem;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+
+.contato__geral {
+    position: absolute;
+    z-index: 1;
+    color: aqua;
+    margin-top: 2px;
+}

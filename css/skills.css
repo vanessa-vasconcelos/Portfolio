@@ -1,0 +1,6 @@
+.skills {
+    display: flex;
+    position: absolute;
+    top: 102rem;
+    color: var(--cor-amarelo);
+}

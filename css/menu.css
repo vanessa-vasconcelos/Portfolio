@@ -24,6 +24,11 @@
     
 }
 
+.menu__imagem {
+    border-radius: 1rem;
+    box-shadow: 3px 3px 23px 12px rgba(0, 0, 0, 0.466);
+}
+
 .menu__informacao {
     flex-direction: column;
     text-align: center;
