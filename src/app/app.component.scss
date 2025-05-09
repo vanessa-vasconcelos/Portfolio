@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Light theme */
+  --bg: #fdfafa;
+  --surface: #ffffff;
+  --text: #1e1e2f;
+  --text-alt: #5a5a7a;
+  --primary: #7e5bef;
+  --accent: #4a90e2;
+  --border: #e5e5f0;
+  --error: #d64550;
+}
+
+[data-theme="dark"] {
+  /* Dark theme overrides */
+  --bg: #0f0f1a;
+  --surface: #1c1c2e;
+  --text: #ececf1;
+  --text-alt: #a8a8c4;
+  --primary: #9d7bff;
+  --accent: #5ebeff;
+  --border: #2d2d44;
+  --error: #ff6b6b;
+}
+
+html {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Uso nos componentes */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.button-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.button-primary:hover {
+  background: var(--accent);
+}
