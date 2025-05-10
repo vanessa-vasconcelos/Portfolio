@@ -1,0 +1,32 @@
+@import "../../../styles/styles.scss";
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: var(--branco);
+  transform: scale(1.08);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
