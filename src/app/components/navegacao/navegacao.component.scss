@@ -4,29 +4,33 @@ header {
   padding: 40px 4%;
 }
 
-header > .interface {
+.interface {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-header a {
+.menu-desktop{
+  position: fixed;
+}
+
+a {
   color: var(--text-prim);
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
+  font-size: 20px;
 }
 
-header a:hover {
+a:hover {
   // color: var(--branco);
   transform: scale(1.08);
 }
 
-header nav ul {
+nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
   display: inline-block;
   padding: 0 40px;
 }
