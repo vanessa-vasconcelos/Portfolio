@@ -1,4 +1,16 @@
 :root {
+  /* Dark theme (padrão) */
+  --bg: #0a0a23;
+  --surface: #1c1c2e;
+  --text-prim: #ececf1;
+  --text-alt: #a8a8c4;
+  --primary: #9d7bff;
+  --accent: #5ebeff;
+  --border: #2d2d44;
+  --error: #ff6b6b;
+}
+
+[data-theme="Light"] {
   /* Light theme */
   --bg: #f4f4f8;
   --surface: #ffffff;
@@ -8,16 +20,4 @@
   --accent: #5c9ce5;
   --border: #e0e0ec;
   --error: #e94560;
-}
-
-[data-theme="dark"] {
-  /* Dark theme overrides */
-  --bg: #0a0a23;
-  --surface: #1c1c2e;
-  --text: #ececf1;
-  --text-alt: #a8a8c4;
-  --primary: #9d7bff;
-  --accent: #5ebeff;
-  --border: #2d2d44;
-  --error: #ff6b6b;
 }

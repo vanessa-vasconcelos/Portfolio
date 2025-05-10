@@ -7,18 +7,18 @@ header {
 header > .interface {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header a {
-  color: var(--text);
+  color: var(--text-prim);
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
 }
 
 header a:hover {
-  color: var(--branco);
+  // color: var(--branco);
   transform: scale(1.08);
 }
 
