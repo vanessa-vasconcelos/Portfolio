@@ -1,0 +1,21 @@
+#sobre-mim{
+    margin-top:100px ;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 250px;
+    // border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; // blob shape
+    overflow: hidden;
+    background-color: #E04E4E; // cor de fundo (como no exemplo)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover;
+      object-position: center 25%;
+    }
+  }

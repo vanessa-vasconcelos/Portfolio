@@ -1,14 +1,11 @@
-<title>Portfólio</title>
+<nav class="nav-container menu-desktop">
+  <li class="nav-li"><a class="nav-a" href="#sobre-mim">Sobre</a></li>
+  <li class="nav-li"><a class="nav-a" href="#conhecimento">Conhecimento</a></li>
+  <li class="nav-li"><a class="nav-a" href="#projetos">Projetos</a></li>
+  <li class="nav-li"><a class="nav-a" href="#contatos">Contatos</a></li>
+  <li class="nav-li" (click)="alteraLightMode()">
+    <i *ngIf="!lightMode" class="uil uil-moonset"></i>
+    <i *ngIf="lightMode"  class="uil uil-sunset"></i>
+  </li>
 
-<header>
-  <div class="interface" id="sobre-mim">
-    <nav class="menu-desktop">
-      <ul>
-        <li><a href="#sobre-mim">Sobre</a></li>
-        <li><a href="#conhecimento">Conhecimento</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+</nav>

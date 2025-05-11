@@ -1,24 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../styles/styles.scss";
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 html {
   transition: background 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth;
 }
 
-/* Uso nos componentes */
+
 body {
   background: var(--bg);
   color: var(--text-prim);
 }
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-.button-primary {
-  background: var(--primary);
-  color: #fff;
-}
-.button-primary:hover {
-  background: var(--accent);
+
+li {
+  list-style-type: none;
 }
