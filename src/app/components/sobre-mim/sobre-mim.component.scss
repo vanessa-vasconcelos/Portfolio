@@ -1,21 +1,43 @@
-#sobre-mim{
-    margin-top:100px ;
+#sobre-mim {
+  margin-top: 100px;
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
 .foto-perfil {
-    width: 200px;
-    height: 250px;
-    // border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; // blob shape
-    overflow: hidden;
-    background-color: #E04E4E; // cor de fundo (como no exemplo)
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    img {
-      width: 100%;
-      height: 100%; 
-      object-fit: cover;
-      object-position: center 25%;
-    }
+  width: 200px;
+  height: 250px;
+  // border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; // blob shape
+  overflow: hidden;
+  background-color: #E04E4E; // cor de fundo (como no exemplo)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
   }
+}
+
+.texto-sobre {
+  max-width: 400px;
+  margin: 0 auto;
+
+  h1{
+    font-size: 35px;
+    word-break: break-word;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  p{
+    line-height: 1.8;
+  }
+}
