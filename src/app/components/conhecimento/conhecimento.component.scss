@@ -1,5 +1,32 @@
 @import "../../../styles/styles.scss";
 
+#conhecimento {
+    padding-top: 100px;
+}
+
+
+.interface {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+.titulo span {
+    color: var(--primary);
+}
+
+.todos-conhecimentos {
+    display: flex;
+    flex-wrap:wrap ;
+    padding: 30px;
+    justify-content: center;
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
 // section.conhecimento {
 //   padding: 80px 4%;
 // }
