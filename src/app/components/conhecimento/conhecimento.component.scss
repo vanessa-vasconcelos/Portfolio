@@ -1,42 +1,41 @@
 @import "../../../styles/styles.scss";
 
 #conhecimento {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
-
 .interface {
-    display: flex;
-    gap: 100px;
-
+  display: flex;
+  gap: 100px;
 }
 
 .titulo span {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .todos-conhecimentos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 
-    img {
-        width: 65px;
-        height: 70px;
-    }
+  .svg-icon {
+    width: 70px;
+    height: 70px;
+    color: var(--text-prim);
+  }
 
-    .conhecimento-box {
-        margin: 15px;
-        background-color: rgba(36, 27, 44, 0.48);
-        padding: 15px;
-        display: grid;
-        border-radius: 8px;
-        transition: border 0.9s, box-shadow 0.9s; 
-        border: 1px solid transparent;
-    }
+  .conhecimento-box {
+    margin: 15px;
+    background-color: var(--primary);
+    padding: 15px;
+    display: grid;
+    border-radius: 8px;
+    transition: 0.5s, box-shadow 0.8s;
+    border: 1px solid transparent;
+  }
 
-    .conhecimento-box:hover {
-        border: 1px solid var(--primary);
-    }
+  .conhecimento-box:hover {
+    box-shadow: 0px 0px 0px 10px var(--border);
+    transform: scale(1.05);
+  }
 }
-
