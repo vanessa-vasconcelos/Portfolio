@@ -7,8 +7,8 @@
 
 .interface {
     display: flex;
-    // align-items: center;
     gap: 100px;
+
 }
 
 .titulo span {
@@ -18,7 +18,6 @@
 .todos-conhecimentos {
     display: flex;
     flex-wrap: wrap;
-    // align-items: end;
     justify-content: start;
 
     img {
@@ -41,43 +40,3 @@
     }
 }
 
-// section.conhecimento {
-//   padding: 80px 4%;
-// }
-
-// .conhecimento .conhecimento-box {
-//   padding: 20px;
-//   display: inline;
-//   background-color: var(--surface);
-
-//   border-radius: 25px;
-//   text-align: center;
-//   transition: 0.2s;
-
-//   width: 120px;
-//   height: 140px;
-// }
-
-// .conhecimento .flex {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-//   gap: 60px;
-//   margin-top: 45px;
-//   justify-items: center;
-// }
-
-// .conhecimento .conhecimento-box img {
-//   width: 70px;
-//   height: 70px;
-// }
-
-// .conhecimento .conhecimento-box h3 {
-//   font-size: 25px;
-//   margin-top: 5px;
-//   color: var(--text-secondary);
-//   font-weight: 600;
-// }
-
-// section h1{
-//   padding: 150px 4%;
-// }
