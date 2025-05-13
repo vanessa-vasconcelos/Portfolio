@@ -7,9 +7,9 @@
 
 .interface {
     display: flex;
-    align-items: center;
+    // align-items: center;
     gap: 100px;
-  }
+}
 
 .titulo span {
     color: var(--primary);
@@ -17,13 +17,27 @@
 
 .todos-conhecimentos {
     display: flex;
-    flex-wrap:wrap ;
-    padding: 30px;
-    justify-content: center;
+    flex-wrap: wrap;
+    // align-items: end;
+    justify-content: start;
 
     img {
-        width: 90px;
-        height: 90px;
+        width: 65px;
+        height: 70px;
+    }
+
+    .conhecimento-box {
+        margin: 15px;
+        background-color: rgba(36, 27, 44, 0.48);
+        padding: 15px;
+        display: grid;
+        border-radius: 8px;
+        transition: border 0.9s, box-shadow 0.9s; 
+        border: 1px solid transparent;
+    }
+
+    .conhecimento-box:hover {
+        border: 1px solid var(--primary);
     }
 }
 
@@ -67,4 +81,3 @@
 // section h1{
 //   padding: 150px 4%;
 // }
-
