@@ -1,0 +1,33 @@
+#projetos {
+  padding-top: 100px;
+}
+
+.interface-projeto{
+    justify-items: center;
+}
+
+.lista-projetos {
+    padding-top: 50px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-port {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.img-port img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
