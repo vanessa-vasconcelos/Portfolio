@@ -1,0 +1,48 @@
+#inicio {
+  margin-top: 150px;
+}
+
+.interface-inicio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foto-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+.texto-apresentacao {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 48px;
+  word-break: break-word;
+  margin-bottom: 15px;
+}
+
+span {
+  color: var(--primary);
+}
+
+p {
+  text-align: justify;
+  width: 400px;
+  line-height: 1.8;
+}
+
+.icon {
+  font-size: 48px;
+}
+
+.icons-redes .icon .circulo {
+  width: 64px;
+  height: 64px;
+}
