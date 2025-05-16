@@ -2,10 +2,9 @@
   margin-top: 150px;
 }
 
-.interface {
+.interface-inicio{
   display: flex;
   align-items: center;
-  gap: 100px;
 }
 
 .foto-perfil {
@@ -17,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 100px;
 
   img {
     width: 100%;
@@ -29,7 +29,6 @@
 
 .texto-apresentacao{
   max-width: 400px;
-  margin: 0 auto;
 
   h1 {
     font-size: 40px;
@@ -72,4 +71,14 @@
     box-shadow: 0px 0px 8px var(--border);
     transform: scale(1.05);
   }
+}
+
+.icons-redes {
+  display: grid;
+  margin-left: 40px;
+}
+
+.icons-redes .icon .circulo {
+  width: 30px;
+  height: 30px;
 }
