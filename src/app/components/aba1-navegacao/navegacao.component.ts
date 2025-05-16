@@ -1,12 +1,11 @@
 import { NgIf } from '@angular/common';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navegacao',
   imports: [NgIf],
   templateUrl: './navegacao.component.html',
   styleUrl: './navegacao.component.scss',
-  encapsulation: ViewEncapsulation.None,
 })
 export class NavegacaoComponent implements OnInit {
   lightMode = false;
@@ -16,7 +15,9 @@ export class NavegacaoComponent implements OnInit {
     if (savedTheme === 'Dark' || savedTheme === 'Light') {
       this.aplicaTema(savedTheme);
     } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
       this.aplicaTema(prefersDark ? 'Dark' : 'Light');
     }
   }

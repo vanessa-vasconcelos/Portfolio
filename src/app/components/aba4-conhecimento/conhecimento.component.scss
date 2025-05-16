@@ -1,0 +1,41 @@
+#conhecimento {
+  margin-top: 150px;
+}
+
+.interface {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.titulo span {
+  color: var(--primary);
+}
+
+.todos-conhecimentos {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.svg-icon {
+  width: 70px;
+  height: 70px;
+  color: var(--text-primary);
+}
+
+.conhecimento-box {
+  margin: 15px;
+  background-color: var(--primary);
+  padding: 15px;
+  display: grid;
+  border-radius: 8px;
+  transition: 0.5s, box-shadow 0.8s;
+  border: 1px solid transparent;
+}
+
+.conhecimento-box:hover {
+  box-shadow: 0px 0px 0px 10px var(--border);
+  transform: scale(1.05);
+}

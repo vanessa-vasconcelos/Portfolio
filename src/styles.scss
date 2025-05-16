@@ -1,0 +1,74 @@
+:root {
+  /* Dark theme (padrão) */
+  --bg: #160624;
+  --surface: #2d1541;
+  --text-primary: #e4e4eb;
+  --text-secondary: #a3a3b8;
+  --primary: #b77cff;
+  --accent: #4fc3f7;
+  --border: #2e2e50;
+  --error: #ff6b6b;
+  --project: #b77cffcc;
+}
+
+[data-theme="Light"] {
+  /* Light theme */
+  --bg: #f4f4f8;
+  --surface: #ffffff;
+  --text-primary: #1f1f38;
+  --text-secondary: #4a4a67;
+  --primary: #7b57f2;
+  --accent: #5c9ce5;
+  --border: #e0e0ec;
+  --error: #e94560;
+  --project: #7b57f2cc;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  transition: background 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "font-geral", sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.circulo {
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 28px;
+}
