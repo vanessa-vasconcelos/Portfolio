@@ -1,55 +1,55 @@
-#contatos{
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#contatos {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contatos h1 span{
-    color: var(--primary);
+#contatos h1 span {
+  color: var(--primary);
 }
 
 .circulo {
-    background-color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    width: 55px;
-    height: 55px;
-    color: var(--text-prim);
+  width: 55px;
+  height: 55px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  color: var(--text-prim);
 }
 
-  .icons-contato{
-    display: flex;
-    padding: 25px;
-    gap: 50px;
-  }
+.icons-contato {
+  display: flex;
+  padding: 25px;
+  gap: 50px;
+}
 
-  .icon {
-    display: flex;
-    align-items: center;  
-    text-align: center; 
-    flex-wrap: wrap;
-    transition: .2s;
-  }
+.icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  transition: .2s;
+}
 
-  .icon:hover {
-    transform: scale(1.2);
-  }
+.icon:hover {
+  transform: scale(1.2);
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
 .icon h3 {
-    color: var(--text-secondary);
-    line-height: 2;
+  color: var(--text-secondary);
+  line-height: 2;
 }
 
 .icon p {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
