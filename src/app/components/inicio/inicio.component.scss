@@ -1,34 +1,50 @@
-// @font-face {
-//   font-family: "font-geral", sans-serif;
-//   src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-// }
-
-#sobre-mim {
+#inicio {
   margin-top: 150px;
 }
 
 .interface {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
 }
 
-h2 span {
+.foto-perfil {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 15px;
+  }
+}
+
+.texto-apresentacao{
+  max-width: 400px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 40px;
+    word-break: break-word;
+    margin-bottom: 15px;
+
+    span {
       color: var(--primary);
     }
-
-
-.texto-sobre {
-  // max-width: 400px;
-  // margin: 0 auto;
-
+  }
 
   p {
     text-align: justify;
-    // width: 400px;
+    width: 400px;
     line-height: 1.8;
-    // font-family: 'font-geral';
   }
 
   button {
