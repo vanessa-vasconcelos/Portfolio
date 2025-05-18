@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-projeto01-informacoes',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 })
 export class Projeto01InformacoesComponent {
 
-  
+  @Output() fechar = new EventEmitter<void>();
+
+  fecharTela(){
+    this.fechar.emit()
+  }
 }

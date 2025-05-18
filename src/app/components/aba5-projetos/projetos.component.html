@@ -40,5 +40,8 @@
   </div>
 </section>
 
-<app-projeto01-informacoes *ngIf="mostrarDetalhes"></app-projeto01-informacoes>
+<app-projeto01-informacoes *ngIf="mostrarDetalhes"
+(fechar)="fecharInformacoes()"></app-projeto01-informacoes>
+<app-projeto02-informacoes *ngIf="mostrarDetalhes"
+(fechar)="fecharInformacoes()"></app-projeto02-informacoes>
 
