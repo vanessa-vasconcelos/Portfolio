@@ -86,3 +86,16 @@
 .infos {
   background-color: black;
 }
+
+.sobrepor-projetos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #160624f2; // não está funcionando colocar no styles
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

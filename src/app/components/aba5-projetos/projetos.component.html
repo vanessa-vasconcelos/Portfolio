@@ -40,8 +40,9 @@
   </div>
 </section>
 
-<app-projeto01-informacoes *ngIf="projetoEscolhido === 1"
-(fechar)="fecharInformacoes()"></app-projeto01-informacoes>
-<app-projeto02-informacoes *ngIf="projetoEscolhido === 2"
-(fechar)="fecharInformacoes()"></app-projeto02-informacoes>
-
+<div class="sobrepor-projetos" *ngIf="projetoEscolhido === 1">
+  <app-projeto01-informacoes (fechar)="fecharInformacoes()"></app-projeto01-informacoes>
+</div>
+<div class="sobrepor-projetos" *ngIf="projetoEscolhido === 2">
+  <app-projeto02-informacoes (fechar)="fecharInformacoes()"></app-projeto02-informacoes>
+</div>
