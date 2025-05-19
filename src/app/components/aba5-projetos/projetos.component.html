@@ -15,7 +15,7 @@
         </div>
         <div class="descricao">
           <h2>07 Maio de 2025</h2>
-          <button (click)="exibir()">Ver mais</button>
+          <button (click)="exibirProjeto(1)">Ver mais</button>
         </div>
       </div>
 
@@ -33,15 +33,15 @@
         </div>
         <div class="descricao">
           <h2>27 de Abril de 2025</h2>
-          <button (click)="exibir()">Ver mais</button>
+          <button (click)="exibirProjeto(2)">Ver mais</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<app-projeto01-informacoes *ngIf="mostrarDetalhes"
+<app-projeto01-informacoes *ngIf="projetoEscolhido === 1"
 (fechar)="fecharInformacoes()"></app-projeto01-informacoes>
-<app-projeto02-informacoes *ngIf="mostrarDetalhes"
+<app-projeto02-informacoes *ngIf="projetoEscolhido === 2"
 (fechar)="fecharInformacoes()"></app-projeto02-informacoes>
 

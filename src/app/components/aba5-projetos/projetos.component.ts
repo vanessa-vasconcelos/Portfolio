@@ -11,13 +11,13 @@ import { Projeto02InformacoesComponent } from "./projeto02-informacoes/projeto02
   styleUrl: './projetos.component.scss',
 })
 export class ProjetosComponent {
-  mostrarDetalhes: boolean = false;
+  projetoEscolhido: number | null = null;
 
-  exibir() {
-    this.mostrarDetalhes = true;
+  exibirProjeto(numero: number) {
+    this.projetoEscolhido = numero;
   }
 
   fecharInformacoes(){
-    this.mostrarDetalhes = false;
+    this.projetoEscolhido = null;
   }
 }
