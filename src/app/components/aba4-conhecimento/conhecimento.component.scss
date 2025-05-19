@@ -8,8 +8,22 @@
   justify-content: space-between;
 }
 
+.textos-conhecimento {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.titulo {
+  margin-bottom: 10px;
+}
+
 .titulo span {
   color: var(--primary);
+}
+
+.dsecricao-linguagem p{
+  color: var(--text-secondary);
 }
 
 .todos-conhecimentos {
