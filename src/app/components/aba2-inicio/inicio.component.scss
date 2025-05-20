@@ -32,10 +32,6 @@ span {
   color: var(--primary);
 }
 
-// p {
-//   width: 400px;
-// }
-
 .icon {
   font-size: 48px;
 }
@@ -43,4 +39,38 @@ span {
 .icons-redes .icon .circulo {
   width: 64px;
   height: 64px;
+}
+
+@media screen and (max-width: 871px) {
+  .texto-apresentacao  p{
+    max-width: 270px;
+  }
+
+  .texto-apresentacao span {
+    display: block;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .icons-redes .icon .circulo {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .interface-inicio {
+    display: block;
+    justify-items: center;
+  }
+
+  .texto-apresentacao {
+    margin: 25px 0 25px 0;
+  }
+
+  .icons-redes {
+    display: flex;
+  }
 }

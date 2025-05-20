@@ -99,3 +99,14 @@
   justify-content: center;
   align-items: center;
 }
+
+// Falta colocar o click e cada projeto expandir
+@media screen and (max-width: 925px) {
+  .lista-projetos  {
+    flex-direction: column;
+  }
+
+  .img-port {
+    margin-bottom: 50px;
+  }
+}
