@@ -2,79 +2,19 @@
   <div class="interface">
     <div class="textos-conhecimento">
       <h1 class="titulo">MEUS <span>CONHECIMENTOS</span></h1>
-      <p class="dsecricao-linguagem" *ngIf="descricaoLinguagem">{{descricaoLinguagem}}</p>
+      <p class="dsecricao-linguagem" *ngIf="descricaoLinguagem">
+        {{ descricaoLinguagem }}
+      </p>
     </div>
+
     <div class="todos-conhecimentos">
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('HTML é a linguagem de marcação padrão para criar e estruturar o conteúdo de páginas web. Serve para definir a estrutura e o significado do conteúdo, como parágrafos, títulos, listas, imagens e links.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="html5-icon"></mat-icon>
-      </div>
+      <div
+        class="conhecimento-box"
+        *ngFor="let conhecimento of conhecimentos"
+        (click)="mostrarDescricao(conhecimento.descricao)"
 
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('CSS é uma linguagem de estilização utilizada para controlar a apresentação visual de páginas web, como a cor do texto, fontes, espaçamento e layout.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="css3-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('SASS é uma linguagem de extensão para CSS que oferece recursos adicionais para facilitar a escrita e organização de estilos em páginas web.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="sass-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('JavaScript é uma linguagem de programação amplamente utilizada para adicionar interatividade a páginas da web.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="javascript-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('TypeScript é um superconjunto de JavaScript que adiciona digitação estática opcional e recursos avançados ao JavaScript.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="typescript-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('Angular é um framework de desenvolvimento front-end open-source baseado em TypeScript, uma linguagem de programação que estende o JavaScript.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="angular-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('Java é uma linguagem de programação orientada a objetos, multiplataforma, muito utilizada para criar diversos tipos de aplicações, desde softwares para desktop e dispositivos móveis até sistemas de grande escala e aplicações web.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="java-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('O Spring torna a programação em Java mais rápida, fácil e segura para todos. O foco do Spring em velocidade, simplicidade e produtividade o tornou o framework Java mais popular do mundo.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="spring-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('Python é uma linguagem de programação de alto nível, interpretada, orientada a objetos e de tipagem dinâmica, utilizada em diversas áreas.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="python-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('NumPy é uma biblioteca Python que realiza o processamento de matrizes n-dimensionais e computação numérica.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="numpy-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao('Pandas é uma biblioteca Python usada para manipulação e análise de dados.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="pandas-icon"></mat-icon>
-      </div>
-
-      <div class="conhecimento-box"
-        (mouseover)="mostrarDescricao(' Git é um sistema de controle de versão distribuído utilizado para rastrear e gerenciar as alterações em arquivos e projetos de software ao longo do tempo.')"
-        (mouseleave)="sumirDescricao()">
-        <mat-icon class="svg-icon" svgIcon="git-icon"></mat-icon>
+      >
+        <mat-icon class="svg-icon" [svgIcon]="conhecimento.icone"></mat-icon>
       </div>
     </div>
   </div>
