@@ -46,6 +46,10 @@
   font-size: 40px;
 }
 
+.icon:active {
+  border: 1px solid var(--text-primary);
+}
+
 .icon h3 {
   font-size: 20px;
   margin-left: 10px;

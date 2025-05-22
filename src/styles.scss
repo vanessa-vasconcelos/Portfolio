@@ -92,6 +92,10 @@ h1 {
   transform: scale(1.05);
 }
 
+button:active {
+  border: 1px solid var(--text-primary);
+}
+
 
 .img-port img {
   width: 100%;

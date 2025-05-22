@@ -2,7 +2,7 @@
   <div class="interface-projeto">
     <h1 class="titulo">MEUS <span>PROJETOS</span></h1>
     <div class="lista-projetos">
-      <div class="img-port login">
+      <div class="img-port login" (click)="exibirProjeto(1)">
         <img src="assets/imgs/login-modificado.jpg" alt="" />
         <div class="detalhes">
           <h1>Página de Login</h1>
@@ -15,12 +15,12 @@
         </div>
         <div class="descricao">
           <h2>07 Maio de 2025</h2>
-          <button (click)="exibirProjeto(1)">Ver mais</button>
+          <button>Ver mais</button>
         </div>
       </div>
 
 
-      <div class="img-port cardapio">
+      <div class="img-port cardapio" (click)="exibirProjeto(2)">
         <img src="assets/imgs/cardapio-min.jpg" alt="" />
         <div class="detalhes">
           <h1>Cardápio</h1>
@@ -33,7 +33,7 @@
         </div>
         <div class="descricao">
           <h2>27 de Abril de 2025</h2>
-          <button (click)="exibirProjeto(2)">Ver mais</button>
+          <button>Ver mais</button>
         </div>
       </div>
     </div>

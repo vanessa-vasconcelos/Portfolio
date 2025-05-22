@@ -48,6 +48,19 @@ span {
   height: 64px;
 }
 
+i {
+  transition: 0.5s, box-shadow 0.5s;
+}
+
+i:hover {
+  box-shadow: 0px 0px 0px 8px var(--border);
+  transform: scale(1.05);
+}
+
+i:active {
+  border: 1px solid var(--text-primary);
+}
+
 @media screen and (max-width: 1102px) {
   .foto-perfil {
     width: 250px;
