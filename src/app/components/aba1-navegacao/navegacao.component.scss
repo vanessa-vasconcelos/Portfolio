@@ -8,12 +8,22 @@
   left: 0;
   right: 0;
   z-index: 3;
+  position: relative;
+}
+
+.menu {
+  display: none;
+  background-color: var(--primary);
+  margin: 20px 0 0 35px;
+  color: var(--text-primary);
+  padding: 5px 10px 10px 10px;
 }
 
 ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
 .nav-li {
@@ -41,4 +51,24 @@ ol {
 
 .nav-li:hover {
   color: var(--primary);
+}
+
+
+
+@media screen and (max-width: 618px) {
+  .menu {
+    display: flex !important;
+  }
+
+   .nav-container ol {
+    display: none !important;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    width: 100%;
+  }
+
+   .nav-container ol.ativo {
+    display: flex !important;
+  }
 }

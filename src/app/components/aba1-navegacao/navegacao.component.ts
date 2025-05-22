@@ -1,14 +1,16 @@
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navegacao',
-  imports: [NgIf],
+  imports: [NgIf, CommonModule],
   templateUrl: './navegacao.component.html',
   styleUrl: './navegacao.component.scss',
 })
 export class NavegacaoComponent implements OnInit {
   lightMode = false;
+  menuAberto = false;
+  // lightModeMenu = false;
 
   ngOnInit(): void {
     const savedTheme = localStorage.getItem('theme');
@@ -31,5 +33,9 @@ export class NavegacaoComponent implements OnInit {
   private aplicaTema(theme: string) {
     this.lightMode = theme === 'Dark';
     document.documentElement.setAttribute('data-theme', theme);
+  }
+
+  alteraLightModeMenu() {
+    this.lightMode = !this.lightMode;
   }
 }

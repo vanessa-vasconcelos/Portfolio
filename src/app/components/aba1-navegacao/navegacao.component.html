@@ -1,17 +1,14 @@
 <nav class="nav-container" id="inicio">
-  <ol>
+  <button class="menu material-symbols-outlined" (click)="menuAberto = !menuAberto">☰
+  </button>
+  <ol [ngClass]="{ 'ativo': menuAberto }">
     <li class="nav-li"><a class="nav-a" href="#sobre-mim">Sobre</a></li>
     <li class="nav-li">
       <a class="nav-a" href="#conhecimento">Conhecimento</a>
     </li>
     <li class="nav-li"><a class="nav-a" href="#projetos">Projetos</a></li>
     <li class="nav-li"><a class="nav-a" href="#contatos">Contatos</a></li>
-    <li
-      class="nav-li"
-      (keydown)="alteraLightMode()"
-      (keypress)="alteraLightMode()"
-      (click)="alteraLightMode()"
-    >
+    <li class="nav-li" (keydown)="alteraLightMode()" (keypress)="alteraLightMode()" (click)="alteraLightMode()">
       <i *ngIf="!lightMode" class="uil uil-moonset"></i>
       <i *ngIf="lightMode" class="uil uil-sunset"></i>
     </li>
