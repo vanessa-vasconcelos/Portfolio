@@ -14,55 +14,76 @@ export class ConhecimentoComponent {
   conhecimentos = [
     {
       icone: 'html5-icon',
-      descricao: 'HTML é a linguagem de marcação padrão para criar e estruturar o conteúdo de páginas web. Serve para definir a estrutura e o significado do conteúdo, como parágrafos, títulos, listas, imagens e links.'
+      descricao: 'HTML é a linguagem padrão usada para estruturar o conteúdo de páginas web, como textos, listas, imagens e links.',
+      nivel_conhecimento: 'Intermediário'
     },
     {
       icone: 'css3-icon',
-      descricao: 'CSS é uma linguagem de estilização utilizada para controlar a apresentação visual de páginas web, como a cor do texto, fontes, espaçamento e layout.'
+      descricao: 'CSS é uma linguagem de estilização utilizada para controlar a apresentação visual de páginas web, como a cor do texto, fontes, espaçamento e layout.',
+      nivel_conhecimento: 'Intermediário'
     },
     {
       icone: 'sass-icon',
-      descricao: 'SASS é uma linguagem de extensão para CSS que oferece recursos adicionais para facilitar a escrita e organização de estilos em páginas web.'
+      descricao: 'SASS é uma linguagem de extensão para CSS que oferece recursos adicionais para facilitar a escrita e organização de estilos em páginas web.',
+      nivel_conhecimento: 'Intermediário'
     },
     {
       icone: 'javascript-icon',
-      descricao: 'JavaScript é uma linguagem de programação amplamente utilizada para adicionar interatividade a páginas da web.'
+      descricao: 'JavaScript é uma linguagem de programação amplamente utilizada para adicionar interatividade a páginas da web.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'typescript-icon',
-      descricao: 'TypeScript é um superconjunto de JavaScript que adiciona digitação estática opcional e recursos avançados ao JavaScript.'
+      descricao: 'TypeScript é um superconjunto de JavaScript que adiciona digitação estática opcional e recursos avançados ao JavaScript.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'angular-icon',
-      descricao: 'Angular é um framework de desenvolvimento front-end open-source baseado em TypeScript, uma linguagem de programação que estende o JavaScript.'
+      descricao: 'Angular é um framework de desenvolvimento front-end open-source baseado em TypeScript, uma linguagem de programação que estende o JavaScript.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'java-icon',
-      descricao: 'Java é uma linguagem de programação orientada a objetos, multiplataforma, muito utilizada para criar diversos tipos de aplicações...'
+      descricao: 'Java é uma linguagem de programação orientada a objetos e multiplataforma, usada para criar aplicações desktop, mobile e web.',
+      nivel_conhecimento: 'Intermediário'
     },
     {
       icone: 'spring-icon',
-      descricao: 'O Spring torna a programação em Java mais rápida, fácil e segura para todos. É o framework Java mais popular do mundo.'
+      descricao: 'O Spring torna a programação em Java mais rápida, fácil e segura para todos. É o framework Java mais popular do mundo.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'python-icon',
-      descricao: 'Python é uma linguagem de programação de alto nível, interpretada, orientada a objetos e de tipagem dinâmica.'
+      descricao: 'Python é uma linguagem de programação de alto nível, interpretada, orientada a objetos e de tipagem dinâmica.',
+      nivel_conhecimento: 'Intermediário'
     },
     {
       icone: 'numpy-icon',
-      descricao: 'NumPy é uma biblioteca Python que realiza o processamento de matrizes n-dimensionais e computação numérica.'
+      descricao: 'NumPy é uma biblioteca Python que realiza o processamento de matrizes n-dimensionais e computação numérica.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'pandas-icon',
-      descricao: 'Pandas é uma biblioteca Python usada para manipulação e análise de dados.'
+      descricao: 'Pandas é uma biblioteca Python usada para manipulação e análise de dados.',
+      nivel_conhecimento: 'Básico'
     },
     {
       icone: 'git-icon',
-      descricao: 'Git é um sistema de controle de versão distribuído utilizado para rastrear e gerenciar as alterações em projetos.'
+      descricao: 'Git é um sistema de controle de versão distribuído utilizado para rastrear e gerenciar as alterações em projetos.',
+      nivel_conhecimento: 'Básico'
     }
   ];
 
-  mostrarDescricao(texto: string) {
-    this.descricaoLinguagem = this.descricaoLinguagem === texto ? null : texto;
+  mostrarDescricao(conhecimento: any) {
+    const novaDescricao = `
+    ${conhecimento.descricao}
+    <br>
+    <span class="nivel-conhecimento">
+      Nível: ${conhecimento.nivel_conhecimento}
+    </span>
+  `;
+
+    this.descricaoLinguagem = this.descricaoLinguagem === novaDescricao ? null : novaDescricao;
   }
+
 }

@@ -2,18 +2,13 @@
   <div class="interface">
     <div class="textos-conhecimento">
       <h1 class="titulo">MEUS <span>CONHECIMENTOS</span></h1>
-      <p class="dsecricao-linguagem" *ngIf="descricaoLinguagem">
-        {{ descricaoLinguagem }}
+      <p class="dsecricao-linguagem" *ngIf="descricaoLinguagem" [innerHTML]="descricaoLinguagem">
       </p>
     </div>
 
     <div class="todos-conhecimentos">
-      <div
-        class="conhecimento-box"
-        *ngFor="let conhecimento of conhecimentos"
-        (click)="mostrarDescricao(conhecimento.descricao)"
-
-      >
+      <div class="conhecimento-box" *ngFor="let conhecimento of conhecimentos"
+        (click)="mostrarDescricao(conhecimento)">
         <mat-icon class="svg-icon" [svgIcon]="conhecimento.icone"></mat-icon>
       </div>
     </div>
