@@ -10,10 +10,17 @@
 
 .foto-perfil {
   display: flex;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding-top: 5px;
+  // width: 255px;
+  // justify-content: center;
+  // padding-bottom: 5px;
 }
 
 img {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .texto_redes {
