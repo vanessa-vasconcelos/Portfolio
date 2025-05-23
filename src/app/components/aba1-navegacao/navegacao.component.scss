@@ -3,7 +3,7 @@
   width: 100%;
   height: 70px;
   position: fixed;
-  border-bottom: 1px solid #00000026;
+  border-bottom: 1px solid var(--border-inicio);
   top: 0;
   left: 0;
   right: 0;
@@ -55,12 +55,16 @@ ol {
 
 
 
-@media screen and (max-width: 618px) {
+@media screen and (max-width: 629px) {
+  #inicio {
+    border-bottom: 1px solid var(--project);
+  }
+
   .menu {
     display: flex !important;
   }
 
-   .nav-container ol {
+  .nav-container ol {
     display: none !important;
     flex-direction: column;
     background: var(--bg);
@@ -68,7 +72,7 @@ ol {
     width: 100%;
   }
 
-   .nav-container ol.ativo {
+  .nav-container ol.ativo {
     display: flex !important;
   }
 }
