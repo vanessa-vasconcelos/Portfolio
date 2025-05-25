@@ -101,14 +101,16 @@ i:active {
 
   .icons-redes {
     display: flex;
-    
+    justify-items: center;
+
   }
 
   .icon {
     margin-left: 80px;
   }
 
-  h1, span {
+  h1,
+  span {
     font-size: 38px;
   }
 
@@ -140,75 +142,9 @@ i:active {
     }
 
     .icon {
-    margin-left: 100px;
-  }
+      margin-left: 100px;
+    }
 
   }
 
 }
-
-// @media screen and (max-width: 905px) {
-//   .texto_redes{
-//     width: 700px;
-//   }
-// }
-
-// @media screen and (max-width: 905px) {
-//   .interface-inicio {
-//   display: flex;
-// }
-
-//   .texto_redes{
-//     display: block;
-//     width: 900px;
-//   }
-//   .texto-apresentacao p {
-//     max-width: 270px;
-//   }
-
-//   .texto-apresentacao span {
-//     display: block;
-//   }
-
-
-//   .icons-redes{
-//     display: flex;
-//   }
-
-//   .icon {
-//     margin-left: 40px;
-//   }
-
-// }
-
-
-// @media screen and (max-width: 695px) {
-//   #inicio {
-//     margin-top: 25px;
-//   }
-
-//   .texto-apresentacao {
-//     margin: 10px 0 25px 0;
-//     max-width: 200px;
-//   }
-
-//   // .icons-redes {
-//   //   display: flex;
-//   // }
-
-//   .foto-perfil {
-//     width: 300px;
-//     height: 300px;
-//   }
-
-//   img {
-//     width: 300px;
-//     height: 300px;
-//     object-fit: contain;
-//   }
-
-//   h1 {
-//     font-size: 28px;
-//   }
-
-// }

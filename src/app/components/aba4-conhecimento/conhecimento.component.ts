@@ -19,7 +19,7 @@ export class ConhecimentoComponent {
     },
     {
       icone: 'css3-icon',
-      descricao: 'CSS é uma linguagem de estilização utilizada para controlar a apresentação visual de páginas web, como a cor do texto, fontes, espaçamento e layout.',
+      descricao: 'CSS é uma linguagem de estilização utilizada para controlar a apresentação visual de páginas web.',
       nivel_conhecimento: 'Intermediário'
     },
     {

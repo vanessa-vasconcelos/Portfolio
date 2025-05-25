@@ -1,14 +1,14 @@
 <section id="conhecimento">
   <div class="interface">
     <div class="textos-conhecimento">
-      <h1 class="titulo">MEUS <span>CONHECIMENTOS</span></h1>
+        <h1 class="titulo">MEUS </h1>
+        <span>CONHECIMENTOS</span>
       <p class="dsecricao-linguagem" *ngIf="descricaoLinguagem" [innerHTML]="descricaoLinguagem">
       </p>
     </div>
 
     <div class="todos-conhecimentos">
-      <div class="conhecimento-box" *ngFor="let conhecimento of conhecimentos"
-        (click)="mostrarDescricao(conhecimento)">
+      <div class="conhecimento-box" *ngFor="let conhecimento of conhecimentos" (click)="mostrarDescricao(conhecimento)">
         <mat-icon class="svg-icon" [svgIcon]="conhecimento.icone"></mat-icon>
       </div>
     </div>

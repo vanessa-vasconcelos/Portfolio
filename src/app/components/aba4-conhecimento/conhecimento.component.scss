@@ -18,11 +18,13 @@
   margin-bottom: 10px;
 }
 
-.titulo span {
+span {
   color: var(--primary);
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.dsecricao-linguagem p{
+p {
   color: var(--text-secondary);
 }
 
@@ -64,9 +66,28 @@
 @media screen and (max-width: 755px) {
   .interface {
     display: block;
+    justify-items: center;
   }
 
   .todos-conhecimentos {
-    margin-top: 25px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .textos-conhecimento {
+    align-items: center;
+  }
+
+  .dsecricao-linguagem {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 707px) {
+  .todos-conhecimentos {
+    justify-content: center;
   }
 }
