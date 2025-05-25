@@ -92,20 +92,6 @@ p {
   text-align: justify;
 }
 
-/* ---------- NOTEBOOK (até 1024px) ---------- */
-@media screen and (max-width: 1024px) {
-  #conhecimento {
-    margin-top: 100px;
-  }
-}
-
-/* ---------- TABLET (até 768px) ---------- */
-@media screen and (max-width: 768px) {
-  #conhecimento {
-    margin-top: 90px;
-  }
-}
-
 /* ---------- CELULAR (até 576px) ---------- */
 @media screen and (max-width: 576px) {
   h1 {
