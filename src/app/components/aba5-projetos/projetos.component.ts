@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projetos.component.scss',
 })
 export class ProjetosComponent {
+  scrollPosition = 0;
+
   projetos = [
     {
       id: 1,
@@ -39,12 +41,26 @@ export class ProjetosComponent {
 
   exibirProjeto(projeto: any) {
     this.projetoSelecionado = projeto;
-    document.body.classList.add('modal-open');
+
+    this.scrollPosition = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.scrollPosition}px`;
+    document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
+
+    history.pushState(null, '', location.href);
   }
 
   fecharInformacoes() {
     this.projetoSelecionado = null;
-    document.body.classList.remove('modal-open');
+
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    document.body.style.overflow = '';
+
+    window.scrollTo(0, this.scrollPosition);
+
     history.replaceState(null, '', location.pathname);
   }
 }

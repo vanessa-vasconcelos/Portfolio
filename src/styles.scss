@@ -46,12 +46,6 @@ body {
   color: var(--text-primary);
 }
 
-body.modal-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-}
-
 li {
   list-style-type: none;
 }
