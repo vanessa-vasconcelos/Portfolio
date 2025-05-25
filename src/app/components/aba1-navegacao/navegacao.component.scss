@@ -3,12 +3,11 @@
   width: 100%;
   height: 70px;
   position: fixed;
-  border-bottom: 1px solid var(--border-inicio);
+  border-bottom: 1px solid var(--primary);
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
-  position: relative;
+  z-index: 5;
 }
 
 .menu {
@@ -52,8 +51,6 @@ ol {
 .nav-li:hover {
   color: var(--primary);
 }
-
-
 
 @media screen and (max-width: 629px) {
   #inicio {

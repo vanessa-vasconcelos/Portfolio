@@ -2,50 +2,44 @@
   margin-top: 150px;
 }
 
-.interface {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.textos-conhecimento {
+.container {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 350px;
 }
 
 .titulo {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
-span {
+.titulo span {
   color: var(--primary);
-  font-size: 28px;
   font-weight: bold;
 }
 
-p {
-  color: var(--text-secondary);
-}
-
 .todos-conhecimentos {
-  width: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
+}
+.todos-conhecimentos p {
+  margin-top: 16px;
 }
 
 .svg-icon {
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   color: var(--text-primary);
 }
 
 .conhecimento-box {
-  margin: 15px;
   background-color: var(--primary);
-  padding: 15px;
-  display: grid;
+  margin: 8px;
+  padding: 16px;
   border-radius: 8px;
   transition: 0.2s, box-shadow 0.5s;
   border: 1px solid transparent;
@@ -58,36 +52,32 @@ p {
 }
 
 .conhecimento-box:active {
-  border: 1px solid var(--text-primary);
+  transform: scale(0.95);
 }
 
-
-
-@media screen and (max-width: 755px) {
-  .interface {
-    display: block;
-    justify-items: center;
-  }
-
-  .todos-conhecimentos {
-    margin-top: 20px;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .textos-conhecimento {
-    align-items: center;
-  }
-
-  .dsecricao-linguagem {
-    margin-top: 20px;
+/* ---------- NOTEBOOK (até 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  #conhecimento {
+    margin-top: 100px;
   }
 }
 
-@media screen and (max-width: 707px) {
-  .todos-conhecimentos {
-    justify-content: center;
+/* ---------- TABLET (até 768px) ---------- */
+@media screen and (max-width: 768px) {
+  #conhecimento {
+    margin-top: 90px;
+  }
+}
+
+/* ---------- CELULAR (até 576px) ---------- */
+@media screen and (max-width: 576px) {
+  #conhecimento {
+    margin-top: 80px;
+  }
+
+  .svg-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--text-primary);
   }
 }

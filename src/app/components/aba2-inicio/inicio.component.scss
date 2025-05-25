@@ -4,8 +4,11 @@
 
 .container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  min-height: 500px;
 }
 
 .foto-perfil {
@@ -76,7 +79,7 @@
 /* ---------- NOTEBOOK (até 1024px) ---------- */
 @media screen and (max-width: 1024px) {
   #inicio {
-    margin-top: 80px;
+    margin-top: 100px;
   }
   .container {
     flex-direction: column;
@@ -99,7 +102,7 @@
 /* ---------- TABLET (até 768px) ---------- */
 @media screen and (max-width: 768px) {
   #inicio {
-    margin-top: 65px;
+    margin-top: 90px;
   }
 
   .foto-perfil img {
@@ -116,7 +119,7 @@
 /* ---------- CELULAR (até 576px) ---------- */
 @media screen and (max-width: 576px) {
   #inicio {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .foto-perfil img {

@@ -7,10 +7,8 @@
   --primary: #b77cff;
   --accent: #4fc3f7;
   --border: #2e2e50;
-  --bg-claro: #160624f2;
   --error: #ff6b6b;
   --project: #b77cffcc;
-  --border-inicio: #00000026; /* fazer a cor para modo claro*/
 }
 
 [data-theme="Light"] {
@@ -43,9 +41,15 @@ html {
 }
 
 body {
-  font-family: "font-geral", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--bg);
   color: var(--text-primary);
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 li {
@@ -64,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 button {
@@ -94,9 +98,27 @@ p {
   text-align: justify;
 }
 
-.img-port img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
+/* ---------- NOTEBOOK (até 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  #conhecimento {
+    margin-top: 100px;
+  }
+}
+
+/* ---------- TABLET (até 768px) ---------- */
+@media screen and (max-width: 768px) {
+  #conhecimento {
+    margin-top: 90px;
+  }
+}
+
+/* ---------- CELULAR (até 576px) ---------- */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }

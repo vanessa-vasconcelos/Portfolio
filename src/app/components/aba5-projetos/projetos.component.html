@@ -1,48 +1,27 @@
-<section id="projetos">
-  <div class="interface-projeto">
+<main id="projetos">
+  <div class="container">
     <h1 class="titulo">MEUS <span>PROJETOS</span></h1>
     <div class="lista-projetos">
-      <div class="img-port login" (click)="exibirProjeto(1)">
-        <img src="assets/imgs/login-modificado.jpg" alt="" />
-        <div class="detalhes">
-          <h1>Página de Login</h1>
-          <div class="mini-linguagens">
-            <mat-icon class="svg-icon" svgIcon="angular-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="java-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="sass-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="html5-icon"></mat-icon>
-          </div>
-        </div>
-        <div class="descricao">
-          <h2>07 Maio de 2025</h2>
-          <button>Ver mais</button>
-        </div>
-      </div>
-
-
-      <div class="img-port cardapio" (click)="exibirProjeto(2)">
-        <img src="assets/imgs/cardapio-min.jpg" alt="" />
-        <div class="detalhes">
-          <h1>Cardápio</h1>
-          <div class="mini-linguagens">
-            <mat-icon class="svg-icon" svgIcon="typescript-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="java-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="spring-icon"></mat-icon>
-            <mat-icon class="svg-icon" svgIcon="sass-icon"></mat-icon>
-          </div>
-        </div>
-        <div class="descricao">
-          <h2>27 de Abril de 2025</h2>
-          <button>Ver mais</button>
-        </div>
-      </div>
+      <app-projeto-card
+        *ngFor="let projeto of projetos"
+        [imagem]="projeto.imagem"
+        [titulo]="projeto.titulo"
+        [data]="projeto.data"
+        [tecnologias]="projeto.tecnologias"
+        [projetoId]="projeto.id"
+        (selecionar)="exibirProjeto(projeto)"
+      ></app-projeto-card>
     </div>
   </div>
-</section>
+</main>
 
-<div class="sobrepor-projetos" *ngIf="projetoEscolhido === 1">
-  <app-projeto01-informacoes (fechar)="fecharInformacoes()"></app-projeto01-informacoes>
-</div>
-<div class="sobrepor-projetos" *ngIf="projetoEscolhido === 2">
-  <app-projeto02-informacoes (fechar)="fecharInformacoes()"></app-projeto02-informacoes>
-</div>
+<app-projeto-modal
+  *ngIf="projetoSelecionado"
+  [imagem]="projetoSelecionado.imagem"
+  [titulo]="projetoSelecionado.titulo"
+  [descricao]="projetoSelecionado.descricao"
+  [data]="projetoSelecionado.data"
+  [repoUrl]="projetoSelecionado.repoUrl"
+  [linkedinUrl]="projetoSelecionado.linkedinUrl"
+  (fechar)="fecharInformacoes()"
+></app-projeto-modal>

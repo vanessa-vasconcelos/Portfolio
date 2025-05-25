@@ -2,11 +2,13 @@
   margin-top: 150px;
 }
 
-.interface {
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  width: 100%;
+  min-height: 350px;
 }
 
 .titulo span {
@@ -22,4 +24,29 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* ---------- NOTEBOOK (até 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  #sobre-mim {
+    margin-top: 100px;
+  }
+}
+
+/* ---------- TABLET (até 768px) ---------- */
+@media screen and (max-width: 768px) {
+  #sobre-mim {
+    margin-top: 90px;
+  }
+}
+
+/* ---------- CELULAR (até 576px) ---------- */
+@media screen and (max-width: 576px) {
+  #sobre-mim {
+    margin-top: 80px;
+  }
+
+  .container {
+    min-height: 500px;
+  }
 }

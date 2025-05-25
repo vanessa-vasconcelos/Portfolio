@@ -1,0 +1,153 @@
+.img-port {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(22, 6, 36, 0.95);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 100vh;
+  animation: fadeInScale 0.3s ease-out;
+}
+
+.container-infos {
+  display: flex;
+  gap: 30px;
+  background-color: var(--surface);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.container-infos img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.container-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-prim);
+  gap: 20px;
+  padding: 10px 0;
+  line-height: 1.6;
+}
+
+.topo-texto {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.topo-texto span {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--error);
+}
+
+.container-texto p {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn button:hover {
+  background-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+  .container-infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-infos img {
+    max-width: 100%;
+  }
+
+  .topo-texto {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-port {
+    padding: 20px;
+  }
+
+  .container-infos {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 16px;
+  }
+
+  .container-infos img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .container-texto {
+    font-size: 16px;
+  }
+
+  .topo-texto {
+    flex-direction: row;
+  }
+
+  .topo-texto span {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+  .btn {
+    flex-direction: column;
+    align-items: stretch;
+    width: 50%;
+  }
+
+  .btn button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

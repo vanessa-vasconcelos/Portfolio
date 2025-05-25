@@ -1,0 +1,27 @@
+<section class="img-port">
+  <div class="container-infos">
+    <img [src]="imagem" alt="projeto" />
+    <div class="container-texto">
+      <div class="topo-texto">
+        <h1>{{ titulo }}</h1>
+        <span
+          (click)="fecharTela()"
+          (keydown)="fecharTela()"
+          (keypress)="fecharTela()"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+      <p>{{ descricao }}</p>
+      <h2>Finalizado em: {{ data }}</h2>
+    </div>
+  </div>
+  <div class="btn">
+    <a [href]="repoUrl" target="_blank">
+      <button>Acessar Repositório</button>
+    </a>
+    <a [href]="linkedinUrl" target="_blank">
+      <button>Ver post no Linkedin</button>
+    </a>
+  </div>
+</section>

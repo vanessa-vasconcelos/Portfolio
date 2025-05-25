@@ -2,89 +2,23 @@
   margin-top: 150px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+
 .titulo span {
   color: var(--primary);
 }
 
-.interface-projeto {
-  justify-items: center;
-}
-
 .lista-projetos {
-  padding-top: 5px;
   display: flex;
-  margin: 30px;
-}
-
-.img-port {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 20px;
-  cursor: pointer;
-  transition: .3s ease;
-}
-
-.img-port::before {
-  content: "";
-  display: block;
-  position: absolute;
-  inset: 0;
-  width: 400px;
-  height: 400px;
-  background-color: var(--project);
-  z-index: 1;
-  border-radius: 20px 20px 0 0;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.img-port:hover {
-  transform: scale(1.1);
-  z-index: 2;
-}
-
-.img-port:hover::before {
-  opacity: 0;
-}
-
-.detalhes {
-  position: absolute;
-  z-index: 2;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-  color: var(--text-primary);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.img-port:hover .detalhes {
-  opacity: 0;
-}
-
-.descricao {
-  opacity: 0;
-  transition: .3s ease;
-  background-color: var(--border);
-  border-radius: 0 0 20px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px;
-}
-
-.img-port:hover .descricao {
-  opacity: 1;
-}
-
-.descricao h2 {
-  font-size: 15px;
-}
-
-.infos {
-  background-color: black;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .sobrepor-projetos {
@@ -93,20 +27,34 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #160624f2; // não está funcionando colocar no styles
-  z-index: 2;
+  background-color: #160624f2;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Falta colocar o click e cada projeto expandir
-@media screen and (max-width: 925px) {
-  .lista-projetos  {
-    flex-direction: column;
+/* Responsividade */
+
+@media screen and (max-width: 1024px) {
+  #projetos {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projetos {
+    margin-top: 90px;
   }
 
-  .img-port {
-    margin-bottom: 50px;
+  .lista-projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #projetos {
+    margin-top: 80px;
   }
 }

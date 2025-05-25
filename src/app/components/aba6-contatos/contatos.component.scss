@@ -2,15 +2,16 @@
   margin-top: 150px;
 }
 
-.titulo span {
-  color: var(--primary);
-}
-
-.interface-contatos {
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo span {
+  color: var(--primary);
 }
 
 .icons-contato {
@@ -59,18 +60,35 @@ p {
   font-size: 16px;
 }
 
+/* ---------- NOTEBOOK (até 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  #contatos {
+    margin-top: 100px;
+  }
 
-@media screen and (max-width: 1052px) {
   .icons-contato {
-    display: block;
     flex-direction: column;
   }
-  
+
   .container-icon {
     align-items: center;
   }
+}
 
-  p {
-    margin-bottom: 30px;
+/* ---------- TABLET (até 768px) ---------- */
+@media screen and (max-width: 768px) {
+  #contatos {
+    margin-top: 90px;
+  }
+}
+
+/* ---------- CELULAR (até 576px) ---------- */
+@media screen and (max-width: 576px) {
+  #contatos {
+    margin-top: 80px;
+  }
+
+  .icons-contato {
+    min-height: 350px;
   }
 }
