@@ -72,6 +72,11 @@ export class ConhecimentoComponent {
       descricao:
         'Git é um sistema de controle de versão distribuído utilizado para rastrear e gerenciar as alterações em projetos.',
     },
+    {
+      icone: 'powerbi-icon',
+      descricao:
+        'Power BI é uma plataforma da Microsoft de análise de dados e business intelligence que integra informações de várias fontes e gera relatórios, dashboards e visualizações interativas.'
+    },
   ];
 
   mostrarDescricao(conhecimento: any) {
